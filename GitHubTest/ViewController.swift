@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var labelText: UILabel!
+    @IBAction func buttonPressed(sender: AnyObject) {
+        labelText.text = "Hello World"
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
